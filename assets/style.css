@@ -1,0 +1,27 @@
+/*h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 200px;
+    color: white;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: bold;
+    font-size: 60px; 
+
+  }*/
+
+  .jumbotron {
+    background-color: steelblue;
+    background-image: linear-gradient(to left, steelblue , rgb(88, 87, 106));
+    /*height: 10vh;*/
+
+  }
+
+  .container {
+    background-color: steelblue;
+    background-image: linear-gradient(to left, steelblue , rgb(88, 87, 106));
+  }
+
+  .jumbotron .h1,.jumbotron h1 {
+    /* color: inherit */
+    color: antiquewhite;
+  }
