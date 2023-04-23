@@ -16,11 +16,6 @@
 
   }
 
-  .container {
-    background-color: steelblue;
-    background-image: linear-gradient(to left, steelblue , rgb(88, 87, 106));
-  }
-
   .jumbotron .h1,.jumbotron h1 {
     color: antiquewhite;
   }
@@ -31,5 +26,5 @@
 
   .row {
     margin-left: 10px;
-    
+
   }
