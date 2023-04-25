@@ -30,3 +30,9 @@ let weather = {
 document.querySelector("#btn-search").addEventListener("click", function() {
     weather.search();
 });
+
+document.querySelector("#searchCity").addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
+        weather.search();
+    }
+})
