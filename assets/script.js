@@ -15,5 +15,11 @@ let weather = {
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         console.log(name,icon,description,temp,humidity,speed);
+        document.querySelector(".city").innerText = "Current Conditions in " + name;
+        document.querySelector(".icon").src = "https://openweathermap.org/img/w/" + icon + ".png";
+        document.querySelector(".description").innerText = description;
+        document.querySelector(".temp").innerText = temp + "°F";
+        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
     }
 }
