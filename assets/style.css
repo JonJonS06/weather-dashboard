@@ -68,3 +68,13 @@
     background-color: none;
     height: 60vh;
   }
+
+  button,input,select,textarea {
+    /* line-height: inherit */
+    line-height: normal;
+    max-height: 5vh;
+    max-width: 11vw;
+
+  }
+
+  
