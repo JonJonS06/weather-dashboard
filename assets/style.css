@@ -86,3 +86,8 @@
     display: flex;
     align-items: center;
 }
+
+.btn-group-lg>.btn,.btn-lg {
+    border-radius: 6px;
+    margin: 10px;
+  }
