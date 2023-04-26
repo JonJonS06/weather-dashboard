@@ -23,42 +23,16 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
         
-    }, 
-    
-    searchHistory: function(searchParam) {
-        const { maxHistoryLength } = 5;
-        const { history } = JSON.parse(localStorage.getItem('data') || '[]');
-        const { isHistoryMaxed } = history.length === maxHistoryLength;
-        const { workingHistory } = isHistoryMaxed ? history.slice(1) : history;
-        const { updatedHistory } = workingHistory.concat(searchParam);
-      
-        localStorage.setItem('searchHistory', JSON.stringify(updatedHistory));
-      }
-      
-      updateSearchHistoryUi: function() { 
-        const { history } = JSON.parse(localStorage.getItem('data') || '[]');
-      
-        $('#history').empty().append(history.map(v => `
-          <ul>
-            <li class="fa fa-long-arrow-right icons"></li>
-            <li class="list-title">${v}</li>
-          </ul>
-        `).join(''));
-      }
-    
-    /*searchHistory: function(searchParam) {
-        const { maxLength } = 5;
-        const {}
-
+        
         localStorage.setItem("data", JSON.stringify(data));
-    }*/
         
         
-    
+    },
     search: function () {
         this.fetchWeather(document.querySelector("#searchCity").value);
     }
 };
+
 
 document.querySelector("#btn-search").addEventListener("click", function() {
     weather.search();
