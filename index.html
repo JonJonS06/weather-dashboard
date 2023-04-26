@@ -42,15 +42,19 @@
                 </div>
                 <button id="clearHistory" class="btn btn-primary btn-lg border-0">Clear History</button>
                 <!-- this border it just to see it, it needs to clear or erase-->
-                <div class="list-group row m-3" id="recentCities">
+                <div class="list-group col m-3" id="recentCities">
                     <h3>Search History</h3>
+                    <ul id="cityList">
+                        <li>Four Oaks</li>
+                        <li>Selma</li>
+                        <li>Raleigh</li>
+                        <li>Cary</li>
+                        <li>Smithfield</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-9">
-                <div class="row border m-3" id="targetCity"></div>
-                <div class=" row m-3" id="infoCity"></div>
-            </div>
         </div>
+           <div id="weatherDisplay">
             <div class="card" id="currentWeather">
                 <h2 class="city">Current Conditions in </h2>
                 <div class="temp">°F</div>
@@ -60,6 +64,14 @@
                 </div>
                 <div class="wind">Wind Speed: </div>
                 <div class="humidity">Humidity: </div>
+            </div>
+                <div class="row" id="fiveDay">
+                <div class="card" id="forecast1">Day One</div>
+                <div class="card" id="forecast2">Day One</div>
+                <div class="card" id="forecast3">Day One</div>
+                <div class="card" id="forecast4">Day One</div>
+                <div class="card" id="forecast5">Day One</div>
+            </div>
             </div>
         </div>
 

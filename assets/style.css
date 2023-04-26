@@ -39,7 +39,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    margin-right: 70px;
+    margin-right: 30px;
+  }
+
+  div#weatherDisplay {
+    padding-left: 30px;
+    width: 90vh;
+    
   }
 
   div#currentWeather {
@@ -91,3 +97,45 @@
     border-radius: 6px;
     margin: 10px;
   }
+
+  div#fiveDay {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    max-height: 20vh;
+  }
+  
+  div#forecast1 {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px;
+  }
+  
+  div#forecast2 {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px;
+  }
+
+  div#forecast3 {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px;
+  }
+
+  div#forecast4 {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px;
+  }
+
+  div#forecast5 {
+    max-width: 20vw;
+    max-height: 20vh;
+    margin: 10px;
+  }
+ 
