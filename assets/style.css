@@ -57,6 +57,8 @@
     width: 50vw;
     flex-direction: column;
     color: black;
+    background-color: rgba(204, 204, 204, 0.4);
+
 
   }
   
@@ -66,6 +68,10 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+#cityList {
+    background-color: rgba(204, 204, 204, 0.4);
 }
 
 .list-group {
@@ -113,29 +119,39 @@
     max-width: 20vw;
     max-height: 20vh;
     margin: 10px;
+    background-color: rgba(204, 204, 204, 0.4);
+
   }
   
   div#forecast2 {
     max-width: 20vw;
     max-height: 20vh;
     margin: 10px;
+    background-color: rgba(204, 204, 204, 0.4);
+
   }
 
   div#forecast3 {
     max-width: 20vw;
     max-height: 20vh;
-    margin: 10px;
+    margin: 10px;    
+    background-color: rgba(204, 204, 204, 0.4);
+
   }
 
   div#forecast4 {
     max-width: 20vw;
     max-height: 20vh;
     margin: 10px;
+    background-color: rgba(204, 204, 204, 0.4);
+
   }
 
   div#forecast5 {
     max-width: 20vw;
     max-height: 20vh;
     margin: 10px;
+    background-color: rgba(204, 204, 204, 0.4);
+
   }
  
