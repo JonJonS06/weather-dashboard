@@ -1,4 +1,6 @@
-let searchHistory = JSON.parse(localStorage.getItem("data"));
+/*let searchHistory = JSON.parse(localStorage.getItem("data"));*/
+
+
 
 let weather = {
     "apiKey": "3e3fd5adbe0d665d9c408101d56eac67",
@@ -22,24 +24,36 @@ let weather = {
         document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
+       
+        localStorage.setItem("name", JSON.stringify(name));
         
-        
-        localStorage.setItem("data", JSON.stringify(data));
-        
-        
+    },  
+    
+    displayRecent: function (name) {
+        this.fetchWeather(document.querySelector("#cityList").value);
     },
+
     search: function () {
         this.fetchWeather(document.querySelector("#searchCity").value);
     }
 };
 
 
-document.querySelector("#btn-search").addEventListener("click", function() {
+
+
+document.querySelector("#btn-search").addEventListener("click", function(event) {
     weather.search();
+    event.preventDefault()
 });
 
 document.querySelector("#searchCity").addEventListener("keyup", function(event) {
     if (event.key == "Enter") {
         weather.search();
+        event.preventDefault();
     }
 })
+
+
+
+
+
